@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.card {
+    margin: 1vh;
+    width: 100%;
+    background-color: #f0f5ff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.card:hover{
+    box-shadow: 0px 10px 16px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
