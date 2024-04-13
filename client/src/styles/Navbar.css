@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
 :root {
 	--mainColor: #29335c;
 	--mainColorLight: #5767aa;
@@ -20,7 +11,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 80px;
+	height: 60px;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
@@ -28,6 +19,7 @@ header {
 
 h3{
     font-weight: 500;
+	width: fit-content;
 }
 
 nav a {
@@ -57,9 +49,14 @@ header div,
 nav {
 	display: flex;
 	align-items: center;
+	width: fit-content;
 }
 
-@media only screen and (max-width: 1024px) {
+.nav-container{
+	width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
 	header .nav-btn {
 		visibility: visible;
 		opacity: 1;

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "../styles/main.css";
+import "../styles/Navbar.css";
 
 function Navbar() {
 	const navRef = useRef();
@@ -14,19 +14,21 @@ function Navbar() {
 	return (
 		<header>
 			<h3>BookReviews</h3>
-			<nav ref={navRef}>
-				<a href="/#">Listado</a>
+			<div className="nav-container">
+				<nav ref={navRef}>
+					<a href="/#">Listado</a>
+					<button
+						className="nav-btn nav-close-btn"
+						onClick={showNavbar}>
+						<FaTimes />
+					</button>
+				</nav>
 				<button
-					className="nav-btn nav-close-btn"
+					className="nav-btn"
 					onClick={showNavbar}>
-					<FaTimes />
+					<FaBars />
 				</button>
-			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
+			</div>
 		</header>
 	);
 }
